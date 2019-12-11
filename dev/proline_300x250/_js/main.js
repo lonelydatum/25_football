@@ -18,7 +18,7 @@ const start = ()=>{
 	tl.set(".frame2", {opacity:1})
 
 	tl.add("phone")
-	tl.from('.phone', .4, {y:"+=100", ease:Power2.easeOut}, "phone")
+	tl.from('.phone', .4, {y:"+=100", ease:Power3.easeOut}, "phone")
 	tl.from('.illust', .3, {scale:0}, "phone+=.3")
 
 	tl.from('.t2', .01, {opacity:0}, "+=.3")
