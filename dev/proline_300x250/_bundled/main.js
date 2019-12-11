@@ -24,7 +24,7 @@ var start = function start() {
 
 	tl.from('.t2', .01, { opacity: 0 }, "+=.3");
 	tl.from('.cta', .1, { opacity: 0 }, "+=1.8");
-	tl.to('.cta', .2, { opacity: 0 }, "+=2.8");
+	tl.to('.cta', .2, { opacity: 0 }, "+=2.3");
 	tl.from('.cta2', .3, { opacity: 0 });
 
 	tl.from('.legal', .3, { opacity: 0 }, "+=1");
