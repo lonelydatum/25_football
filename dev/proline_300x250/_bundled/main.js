@@ -28,8 +28,7 @@ var start = function start() {
 	tl.from('.cta2', .3, { opacity: 0 });
 
 	tl.from('.legal', .3, { opacity: 0 }, "+=1");
-
-	tl.gotoAndPlay("f2");
+	// tl.gotoAndPlay("f2")
 };
 
 start();

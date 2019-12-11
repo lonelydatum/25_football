@@ -25,13 +25,10 @@ const start = ()=>{
 	tl.from('.cta', .1, {opacity:0}, "+=1.8")
 	tl.to('.cta', .2, {opacity:0}, "+=2.8")
 	tl.from('.cta2', .3, {opacity:0})
-
-
 	
 
 	tl.from('.legal', .3, {opacity:0}, "+=1")
-
-	tl.gotoAndPlay("f2")
+	// tl.gotoAndPlay("f2")
 
 }
 
