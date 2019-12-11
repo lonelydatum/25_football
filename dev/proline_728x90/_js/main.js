@@ -12,7 +12,7 @@ const start = ()=>{
 	tlPlayer.from(".player_defend", TIME, {x:"-=15", y:"+=12", ease:Power3.easeOut}, 0)
 	tlPlayer.from(".player_run", TIME, {x:"+=15", y:"+=12", ease:Power3.easeOut}, 0)
 
-	tl.to('.frame1', .15, {opacity:0}, "+=1.6")
+	tl.to('.frame1', .15, {opacity:0}, "+=2.2")
 
 	tl.add("f2")
 	tl.set(".frame2", {opacity:1})
