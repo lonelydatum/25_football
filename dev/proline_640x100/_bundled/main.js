@@ -4,30 +4,31 @@
 var start = function start() {
 	var tl = new TimelineMax();
 	tl.set(".frame1", { opacity: 1 });
-	tl.from('.t1a', .01, { opacity: 0 }, "+=.2");
+	tl.from('.t1a', .01, { opacity: 0 }, "+=.4");
 	tl.from('.t1b', .01, { opacity: 0 }, "+=.6");
 
 	var TIME = 6;
 
 	var tlPlayer = new TimelineMax();
-	tlPlayer.from(".player_defend", TIME, { x: "-=15", y: "+=22", ease: Power3.easeOut }, 0);
-	tlPlayer.from(".player_run", TIME, { x: "+=15", y: "+=22", ease: Power3.easeOut }, 0);
+	tlPlayer.from(".player_defend", TIME, { x: "-=15", y: "+=12", ease: Power3.easeOut }, 0);
+	tlPlayer.from(".player_run", TIME, { x: "+=15", y: "+=12", ease: Power3.easeOut }, 0);
 
-	tl.to('.frame1', .2, { opacity: 0 }, "+=1.6");
+	tl.to('.frame1', .15, { opacity: 0 }, "+=2.2");
 
 	tl.add("f2");
 	tl.set(".frame2", { opacity: 1 });
 
 	tl.add("phone");
-	tl.from('.phone', .4, { y: "+=100", ease: Power3.easeOut }, "phone");
+	tl.from('.phone', .3, { y: "+=100" }, "phone");
 	tl.from('.illust', .3, { scale: 0 }, "phone+=.3");
 
-	tl.from('.t2', .01, { opacity: 0 }, "+=.3");
-	// tl.from('.cta', .1, {opacity:0}, "+=1.4")
-	// tl.to('.cta', .2, {opacity:0}, "+=2.3")
-	// tl.from('.cta2', .3, {opacity:0})
+	tl.from('.t2', .01, { opacity: 0 }, "+=.2");
+	tl.from('.cta', .1, { opacity: 0 }, "+=1.4");
+	tl.to('.cta', .2, { opacity: 0 }, "+=2.3");
+	tl.from('.cta2', .3, { opacity: 0 });
 
-	tl.from('.legal', .3, { opacity: 0 }, "+=.1");
+	tl.from('.legal', .3, { opacity: 0 }, "+=1");
+
 	// tl.gotoAndPlay("f2")
 };
 
